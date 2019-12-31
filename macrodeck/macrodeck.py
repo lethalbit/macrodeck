@@ -25,6 +25,7 @@ from .profile.window import Window
 
 profile_search_dirs = [
 	PROFILE_DIR,
+	USER_PROFILE_DIR,
 ]
 
 def peek_profile(profile):
