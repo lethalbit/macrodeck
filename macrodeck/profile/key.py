@@ -1,7 +1,8 @@
 from PIL import Image, ImageDraw, ImageFont
 from StreamDeck.ImageHelpers import PILHelper
 
-from macrodeck.macrodeck import active_deck, active_profile
+from macrodeck.macrodeck import get_active_deck, get_active_profile
+from .action import Action
 
 class Key:
 	def __init__(self, idx,
@@ -29,6 +30,8 @@ class Key:
 
 
 	def render_key(self):
+		active_deck = get_active_deck()
+		active_profile = get_active_profile()
 		if active_deck is not None:
 			img = PILHelper.create_image(active_deck)
 
@@ -41,6 +44,7 @@ class Key:
 			self.key_image = PILHelper.to_native_format(active_deck, img)
 
 	def update_key(self):
+		active_deck = get_active_deck()
 		if active_deck is not None and self.key_image is not None:
 			active_deck.set_key_image(self.idx, self.key_image)
 

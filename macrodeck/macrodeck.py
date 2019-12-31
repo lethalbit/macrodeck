@@ -13,6 +13,12 @@ decks = DeviceManager(transport='hidapi').enumerate()
 active_profile = None
 active_deck = None
 
+def get_active_deck():
+	return active_deck
+
+def get_active_profile():
+	return active_profile
+
 from .data import *
 from .profile.action import Action
 from .profile.deck import Deck
@@ -68,8 +74,13 @@ def initialize_deck():
 	if active_deck is not None:
 		active_deck.open()
 
-
 def main():
+	global active_profile
+	global active_deck
+	global profile_search_dirs
+
+	mk_user_dirs()
+
 	p = ArgumentParser(description='Elgato Stream Deck Macro pad')
 
 	p.add_argument('--additional-profile-dir', type=str, nargs='+', help='An additional directory to search for profiles in')
