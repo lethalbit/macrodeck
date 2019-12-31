@@ -9,7 +9,7 @@ class Profile:
 		if f_json is not None:
 			self.name        = f_json['name'] if 'name' in f_json else name
 			self.description = f_json['description'] if 'description' in f_json else description
-			self.enabled     = f_json['enable'] if 'enabled' in f_json else enabled
+			self.enabled     = f_json['enabled'] if 'enabled' in f_json else enabled
 			self.deck        = Deck(f_json=f_json['deck']) if 'deck' in f_json else deck
 			self.ico_style   = IconStyle(f_json=f_json['icon_style']) if 'icon_style' in f_json else ico_style
 			self.windows     = [ Window(f_json=win) for win in f_json['windows'] ] if 'windows' in f_json else windows
