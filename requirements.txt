@@ -1,0 +1,5 @@
+hidapi
+pillow
+git+https://github.com/abcminiuser/python-elgato-streamdeck.git
+
+i3ipc

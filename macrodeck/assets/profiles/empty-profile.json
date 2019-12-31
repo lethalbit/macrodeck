@@ -1,0 +1,35 @@
+{
+	"name": "empty-profile",
+	"description": "An empty, example profile",
+	"enabled": false,
+
+	"deck": {
+		"brightness": 1.0
+	},
+
+	"icon_style": {
+		"icon_dpi": "48",
+		"icon_colour": "white",
+		"icon_type": "png"
+	},
+
+	"windows": [
+		{
+			"title": "*",
+			"keys": [
+				{
+					"name": "nothing",
+					"text": "hello",
+					"icon": "sentiment/satisfied",
+
+					"actions": [
+						{
+							"type": "text",
+							"payload": "hello!"
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,38 @@
+{
+	"name": "autodesk-eagle",
+	"description": "Various helpful macros for using Autodesk Eagle",
+	"enabled": true,
+
+	"deck": {
+		"brightness": 1.0
+	},
+
+	"icon_style": {
+		"icon_dpi": "48",
+		"icon_colour": "white",
+		"icon_type": "png"
+	},
+
+	"windows": [
+		{
+			"title": "1 Board",
+			"keys": [
+				{ "name": "move", "icon": "open/with", "actions": [{ "type": "text", "payload": "move\n" }] },
+				{ "name": "move", "icon": "open/with", "actions": [{ "type": "text", "payload": "move\n" }] },
+				{ "name": "move", "icon": "open/with", "actions": [{ "type": "text", "payload": "move\n" }] },
+				{ "name": "move", "icon": "open/with", "actions": [{ "type": "text", "payload": "move\n" }] },
+				{ "name": "move", "icon": "open/with", "actions": [{ "type": "text", "payload": "move\n" }] },
+				{ "name": "move", "icon": "open/with", "actions": [{ "type": "text", "payload": "move\n" }] },
+				{ "name": "move", "icon": "open/with", "actions": [{ "type": "text", "payload": "move\n" }] },
+				{ "name": "move", "icon": "open/with", "actions": [{ "type": "text", "payload": "move\n" }] },
+				{ "name": "move", "icon": "open/with", "actions": [{ "type": "text", "payload": "move\n" }] },
+				{ "name": "move", "icon": "open/with", "actions": [{ "type": "text", "payload": "move\n" }] },
+				{ "name": "move", "icon": "open/with", "actions": [{ "type": "text", "payload": "move\n" }] },
+				{ "name": "move", "icon": "open/with", "actions": [{ "type": "text", "payload": "move\n" }] },
+				{ "name": "move", "icon": "open/with", "actions": [{ "type": "text", "payload": "move\n" }] },
+				{ "name": "move", "icon": "open/with", "actions": [{ "type": "text", "payload": "move\n" }] },
+				{ "name": "move", "icon": "open/with", "actions": [{ "type": "text", "payload": "move\n" }] }
+			]
+		}
+	]
+}
