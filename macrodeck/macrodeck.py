@@ -182,8 +182,6 @@ def main():
 
 		initialize_deck()
 
-	print(active_profile)
-
 	for ky in active_profile.windows[0].keys:
 		ky.render_key()
 		ky.update_key()
